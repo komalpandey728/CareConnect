@@ -1,0 +1,80 @@
+/* Background setup */
+.doctorlist-bg {
+  background: url("D:\reactdemo1.5\public\images\hospital-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centered light-blue box */
+.doctorlist-box {
+  background: rgba(173, 216, 230, 0.9); /* Light blue with opacity */
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+.doctorlist-box h2 {
+  font-size: 26px;
+  color: #003366;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* Doctors listed vertically */
+.doctor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.doctor-item {
+  background: #e6f2ff; /* very light blue card */
+  padding: 18px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.doctor-item:hover {
+  transform: translateY(-3px);
+}
+
+.doctor-item h3 {
+  color: #003366;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.doctor-item p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.book-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.book-btn:hover {
+  background: #005fcc;
+}

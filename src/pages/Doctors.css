@@ -1,0 +1,264 @@
+.doctors-page {
+  min-height: 100vh;
+  background-color: #f0f3f5;
+  background-image: url('D:\reactdemo1.5\public\images\hospital-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 4rem;
+}
+
+.search-banner {
+  background: linear-gradient(135deg, #0d47a1, #1565c0);
+  color: white;
+  padding: 3.5rem 5rem;
+  border-radius: 15px;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.banner-text {
+  max-width: 55%;
+}
+
+.search-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.doctor-images {
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.doctor-img-large {
+  width: 380px;
+  max-height: 10000px;
+  object-fit: contain;
+  border-radius: 15px 15px 0 0;
+  filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.3));
+  transform: translateY(0);
+}
+
+
+.search-section {
+  max-width: 1000px;
+  margin: 2rem auto 4rem;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #0d47a1;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  flex-grow: 1;
+  max-width: 48%; 
+}
+
+.form-group label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #e3f2fd;
+  border: 2px solid #0d47a1;
+  border-radius: 8px;
+  transition: all 0.3s;
+  height: 48px;
+}
+
+.input-box:focus-within {
+  box-shadow: 0 0 0 3px rgba(13, 71, 161, 0.3);
+}
+
+.input-icon {
+  color: #0d47a1;
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.input-box select,
+.input-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 1rem;
+  color: #333;
+  padding: 0;
+  cursor: pointer;
+}
+
+.input-box input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(20%) sepia(90%) saturate(1000%) hue-rotate(200deg);
+  cursor: pointer;
+  border: 2px solid #0d47a1;
+  border-radius: 8px;
+}
+
+.submit-group {
+  width: 100%;
+  order: 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-basis: 100%;
+}
+
+.search-btn {
+  align-self: auto;
+  padding: 0.85rem 2.5rem;
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.1s;
+  height: 48px;
+  min-width: 200px;
+}
+
+.search-btn:hover {
+  background-color: #1565c0;
+  transform: translateY(-1px);
+}
+
+.specialties-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.specialties-section h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.specialty-card {
+  padding: 1rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.specialty-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  border: 1px solid #0d47a1;
+}
+
+.specialty-icon-container {
+  margin-bottom: 0.5rem;
+  color: #ff7e5f;
+}
+
+.specialty-card-icon {
+  font-size: 2.5rem;
+}
+
+.specialty-name-en {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.2rem;
+  line-height: 1.2;
+}
+
+.specialty-name-hi {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .search-banner {
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-text {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .doctor-images {
+    position: static;
+    margin-top: 1rem;
+  }
+  .doctor-img-large {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    transform: none;
+  }
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form-group {
+    max-width: 100%;
+  }
+  .submit-group {
+    margin-top: 1rem;
+    flex-basis: auto;
+  }
+  .search-btn {
+    align-self: stretch;
+  }
+  .specialties-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

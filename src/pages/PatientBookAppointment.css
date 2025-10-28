@@ -1,0 +1,63 @@
+.patient-booking-container {
+  padding: 30px;
+}
+
+.doctor-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.doctor-card {
+  background: #f9f9f9;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 15px;
+  width: 220px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.doctor-card:hover,
+.doctor-card.selected {
+  border-color: #0077cc;
+  background: #eef6ff;
+}
+
+.slots-section {
+  margin-top: 30px;
+}
+
+.slots-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.slots-grid button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.slots-grid button.selected {
+  background: #0077cc;
+  color: white;
+}
+
+.book-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.msg {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}

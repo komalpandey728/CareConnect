@@ -1,0 +1,111 @@
+.doctor-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.doctor-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.doctor-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.doctor-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.doctor-nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.doctor-nav-links li a:hover {
+  color: #007bff;
+}
+
+/* Buttons for sign in/register */
+.doctor-auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-signin,
+.btn-register {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.btn-signin {
+  background-color: #003399;
+  color: white;
+}
+
+.btn-register {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-signin:hover,
+.btn-register:hover {
+  opacity: 0.85;
+}
+
+/* Dropdown */
+.doctor-user-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.doctor-user-avatar {
+  font-weight: 600;
+  color: #333;
+}
+
+.doctor-dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 120%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-dropdown-menu button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.doctor-dropdown-menu button:hover {
+  background-color: #f1f1f1;
+}
